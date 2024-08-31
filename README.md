@@ -6,15 +6,11 @@
 
 ### Currently, this is a demo version utilizing synthetic data, with plans to expand and integrate real user data in the future.
 
-## "AI" Page
+## Demo
 
 <div align="center">
-  <img src="app/static/images/homepage.gif" alt="Home Page Gif" width="900">
+  <img src="app/static/images/homepage.gif" alt="Demo Gif" width="900">
 </div>
-
-## "About" Page
-
-## "Get Inspired" Page
 
 #### Features
 - AI-Powered Exercise Recommendations: Customized workout suggestions based on menstrual cycle phases to optimize performance and recovery.
