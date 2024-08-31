@@ -6,8 +6,10 @@
 
 ### Currently, this is a demo version utilizing synthetic data, with plans to expand and integrate real user data in the future.
 
-
 ## "AI" Page
+<div align="center">
+  <img src="app/static/images/homepage.gif" alt="Home Page Gif" width="300">
+</div>
 
 ## "About" Page
 
