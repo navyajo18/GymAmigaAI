@@ -1,3 +1,7 @@
+
 python -m venv gymamigaenv
 source gymamigaenv/bin/activate
 cd gymamigaenv
+python generate_fake_data.py
+python train_test.py
+python app.py
