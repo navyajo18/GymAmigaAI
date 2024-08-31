@@ -1,9 +1,10 @@
 # Welcome to GymAmigaAI
 ### GymAmigaAI is a health and wellness web application designed to help women optimize their workout routines by syncing them with their menstrual cycles. The application uses artificial intelligence to provide personalized exercise recommendations tailored to each user's unique cycle data. 
+<div align="center">
+  <img src="app/static/images/homepage.png" alt="Home Page" width="950" height="430">
+</div>
 
 ### Currently, this is a demo version utilizing synthetic data, with plans to expand and integrate real user data in the future.
-
-<img src="app/static/images/homepage.png" alt="Home Page" width="850" height="330" align = "center">
 
 
 ## "AI" Page
