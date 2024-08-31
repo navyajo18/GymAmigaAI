@@ -3,7 +3,7 @@
 
 ### Currently, this is a demo version utilizing synthetic data, with plans to expand and integrate real user data in the future.
 
-![Home Page](app/static/images/homepage.png)
+![Home Page](app/static/images/HomePage.png)
 
 
 ## "AI" Page
