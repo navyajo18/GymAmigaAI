@@ -1,5 +1,7 @@
 # Welcome to GymAmigaAI
-### GymAmigaAI is a health and wellness web application designed to help women optimize their workout routines by syncing them with their menstrual cycles. The application uses artificial intelligence to provide personalized exercise recommendations tailored to each user's unique cycle data. Currently, this is a demo version utilizing synthetic data, with plans to expand and integrate real user data in the future.
+### GymAmigaAI is a health and wellness web application designed to help women optimize their workout routines by syncing them with their menstrual cycles. The application uses artificial intelligence to provide personalized exercise recommendations tailored to each user's unique cycle data. 
+
+### Currently, this is a demo version utilizing synthetic data, with plans to expand and integrate real user data in the future.
 
 #### Features
 - AI-Powered Exercise Recommendations: Customized workout suggestions based on menstrual cycle phases to optimize performance and recovery.
@@ -18,7 +20,7 @@
 
 #### Set-Up Instructions
 - Clone the repository
-- Set up a virtual environment (optional but recommended)
+- Set up a virtual environment  
 - Install dependencies: pip install -r requirements.txt
 - Run the application:
 1. Make the Sample Data: python generate_fake_data.py
@@ -26,6 +28,6 @@
 3. Run The Flask App: python app.py 
 
 #### Usage
-- Navigate to the AI tab to start receiving personalized workout recommendations based on your menstrual cycle.
-- Use the About tab to learn more about how the application works and its future plans.
-- Visit the Get Inspired tab for motivational content and fitness tips.
+- Navigate to the "AI" tab to start receiving personalized workout recommendations based on your menstrual cycle.
+- Use the "About" tab to learn more about how the application works.
+- Visit the "Get Inspired" tab to see the future of this app.
