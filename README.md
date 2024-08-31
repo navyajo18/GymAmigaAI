@@ -3,7 +3,7 @@
 
 ### Currently, this is a demo version utilizing synthetic data, with plans to expand and integrate real user data in the future.
 
-<img src="app/static/images/homepage.png" alt="Home Page" width="800" height="400" align = "center">
+<img src="app/static/images/homepage.png" alt="Home Page" width="850" height="330" align = "center">
 
 
 ## "AI" Page
