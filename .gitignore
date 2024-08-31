@@ -3,3 +3,8 @@ include
 lib
 gymamiga.db
 pyvenv.cfg
+fake.data.csv
+scaler_mean.npy
+scaler_scale.npy
+trained_model.h5
+classes.npy
