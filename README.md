@@ -24,7 +24,7 @@
 - Install dependencies: pip install -r requirements.txt
 - Run the application:
 1. Make the Sample Data: python generate_fake_data.py
-2. Train the Ai: python train_test.py
+2. Train the AI: python train_test.py
 3. Run The Flask App: python app.py 
 
 #### Usage
