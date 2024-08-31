@@ -3,7 +3,7 @@
 
 ### Currently, this is a demo version utilizing synthetic data, with plans to expand and integrate real user data in the future.
 
-![Home Page](app/static/images/HomePage.png)
+<img src="app/static/images/homepage.png" alt="Logo of the app" width="200" height="100">
 
 
 ## "AI" Page
