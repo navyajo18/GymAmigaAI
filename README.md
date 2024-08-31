@@ -13,21 +13,17 @@
 - TensorFlow: Machine learning library used to develop the AI model for workout recommendations.
 - Pandas: Data manipulation and analysis library for handling and processing user data.
 - Scikit-learn: Machine learning library used for data preprocessing and model evaluation.
-- NumPy: A fundamental package for scientific computing with Python, used to perform numerical operations and optimize the performance of AI models by handling large arrays and matrices efficientl
+- NumPy: A fundamental package for scientific computing with Python, used to perform numerical operations and optimize the performance of AI models by handling large arrays and matrices efficiently.
 - HTML/CSS: Frontend structure and styling, including responsive design for various devices.
 
 #### Set-Up Instructions
 - Clone the repository
-
 - Set up a virtual environment (optional but recommended)
-
-- Install dependencies:
-pip install -r requirements.txt
-
+- Install dependencies: pip install -r requirements.txt
 - Run the application:
-1. python generate_fake_data: make the sample data --
-2. python train_test: train the AI --
-3. python app.py: run the flask app --
+1. Make the Sample Data: python generate_fake_data.py
+2. Train the Ai: python train_test.py
+3. Run The Flask App: python app.py 
 
 #### Usage
 - Navigate to the AI tab to start receiving personalized workout recommendations based on your menstrual cycle.
