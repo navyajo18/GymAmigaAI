@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymAmigaAI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+           <img src="{{ url_for('static', filename='images/logo.png') }}" alt="GymAmigaAI Logo" style="width: 140px; height: auto;">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}" class="nav-button">AI</a></li>
+                <li><a href="{{ url_for('about') }}" class="nav-button">About</a></li>
+                <li><a href="{{ url_for('get_inspired') }}" class="nav-button">Get Inspired</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Welcome To GymAmigaAI!</h1>
+        <h2>A product designed to sync your menstrual cycle with your workouts and maximize your gains using the power of artificial intelligence.</h2>
+        <h3>Choose a User ID and try it out!</h3>
+        <img src = " {{ url_for('static', filename='images/lets.png') }}   " alt = "Green Sphere" style="width: 250px; height: auto;" class="center">
+        <!-- <img src = "https://static.vecteezy.com/system/resources/previews/031/388/254/original/pastel-green-ball-realistic-glossy-3d-sphere-ball-isolated-geometric-figure-of-round-sphere-vector.jpg" alt = "Green Sphere" style="width: 200px; height: auto;" class="center"> -->
+        
+        
+        <form id="prediction-form">
+            <label for="user_id">User ID -- Check "About" Page For More Info </label>
+            <input type="number" id="user_id" name="user_id" min="1" max="1000" required>
+
+            <label for="cycle_day">What CYCLE DAY of your menstrual cycle are you on?</label>
+            <input type="number" id="cycle_day" name="cycle_day" required>
+
+            <label for="exercise_name">What EXERCISE did you focus on today?</label>
+            <select id="exercise_name" name="exercise_name" required>
+                <option value="Choose From The Following">   </option>
+                <option value="Walking">Walking</option>
+                <option value="Yoga">Yoga</option>
+                <option value="Sports">Sports</option>
+                <option value="Running">Running</option>
+                <option value="Legs & Glutes">Legs & Glutes</option>
+                <option value="Arms">Arms</option>
+                <option value="Back & Shoulders">Back & Shoulders</option>
+                <option value="Abs & Waist">Abs & Waist</option>
+            </select>
+
+            <label for="exercise_intensity">How INTENSE was your workout on a scale of 1-10?</label>
+            <input type="number" id="exercise_intensity" name="exercise_intensity" min="1" max="10" required>
+
+            <label for="pain_level">How PAINFUL was your workout on a scale of 1-10?</label>
+            <input type="number" id="pain_level" name="pain_level" min="1" max="10" required>
+
+            <button type="submit">Click For Your Recommendation!</button>
+        </form>
+
+        <div id="result">
+            <h2>Get your calendar out!</h2>
+            <p id="predicted_output"></p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#prediction-form').on('submit', function (event) {
+                event.preventDefault();
+
+                $.ajax({
+                    url: '/predict',
+                    type: 'POST',
+                    data: $(this).serialize(),
+                    success: function (response) {
+                        $('#predicted_output').html(`Hey User ${$('#user_id').val()}! The next time you're on Cycle Day ${$('#cycle_day').val()}, you should focus on ${response.predicted_exercise} with an intensity of ${response.predicted_intensity}.`);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

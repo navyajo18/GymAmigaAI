@@ -1,0 +1,3 @@
+python -m venv gymamigaenv
+source gymamigaenv/bin/activate
+cd gymamigaenv

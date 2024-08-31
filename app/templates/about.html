@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About GymAmigaAI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+       
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="GymAmigaAI Logo" style="width: 140px; height: auto;">
+        </div>
+        <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}" class="nav-button">AI</a></li>
+            <li><a href="{{ url_for('about') }}" class="nav-button">About</a></li>
+            <li><a href="{{ url_for('get_inspired') }}" class="nav-button">Get Inspired</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <h1>About GymAmigaAI</h1>
+        <h2>Hi Everyone! My name is Navya Joshi and I developed this product.</h2>
+        <img src=" {{ url_for('static', filename='images/me.png') }}" alt="Girl Working Out" style="width: 250px; height: auto;" class="center">
+        <p1> <center> Your menstrual cycle has a significant impact on your workout's effectiveness. By aligning your exercise routine with your cycle, you can achieve better results. This product is designed to help you do just that with AI-powered recommendations based on your unique cycle data. </center> </p>
+        <p2> <center> Currently, you're viewing a demo version, which uses sample data to simulate what you would see during your first menstrual cycle using the app. At first, the AI will use sample data to give you predictions. Then, the AI will learn from your initial data to provide more accurate predictions for future cycles. To train the AI model, I have created 1,000 sample users whose USER IDs you can use to experiment with. </center> </p2>
+        <br>  <center> In the future, I plan to expand the site by allowing it to store real user data and allow user registration. Meanwhile, I've provided a link to the sample user data so you can try out different USER IDs and see the varying results. You can also check out my GitHub to see how the sample data was generated and how the AI was trained! </center>  </br>
+          <a href="https://docs.google.com/spreadsheets/d/1VIRE9PI4gP4XHjSCL6Om-duJ9I_EKQ5StlZ1gg4ctpo/edit?usp=sharing" class="fake-data-button" target="_blank">
+        Click To Try A User ID!
+          </a>
+    </div>
+</body>
+
+</html>

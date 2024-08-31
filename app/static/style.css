@@ -1,0 +1,154 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #efd0db;
+    color: #283541;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+header {
+    background-color: #83b7a0; /* Forest green */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f8b7d2; /* Pastel pink */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a.nav-button:hover {
+    background-color: #f49ac1; /* Slightly darker pink */
+}
+
+.container {
+    max-width: 750px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+h1 {
+    color: #44615b; /* Forest green */
+    text-align: center;
+}
+
+h2, h3 {
+    color: #4d756f; /* Forest green */
+    text-align: center;
+    font-size: 21px;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+form input, form select {
+    font-family: 'Oswald';
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    font-size: 16px;
+}
+
+form button {
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    background-color: #65a78c; /* Pastel pink */
+    color: #283541;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #79c7a8; /* Brighter pink */
+}
+
+#result {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#predicted_output {
+    font-size: 25px;
+    color: #2c3e50;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.fake-data-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.fake-data-button {
+    background-color: #ac4f58; /* Pink color */
+    color: white;
+    border: none;
+    padding: 20px 40px; /* Larger button */
+    font-size: 20px; /* Larger text */
+    font-family: 'Oswald', sans-serif; /* Font style */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block; /* Ensures the button is centered */
+}
+
+.fake-data-button:hover {
+    background-color: #c85f6a; /* Darker pink on hover */
+}
+
+.fake-data-info {
+    font-size: 16px;
+    color: #4d756f; /* Text color */
+    line-height: 1.5;
+}
