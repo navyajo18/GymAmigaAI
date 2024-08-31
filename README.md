@@ -9,7 +9,7 @@
 ## "AI" Page
 
 <div align="center">
-  <img src="app/static/images/homepage.gif" alt="Home Page Gif" width="300">
+  <img src="app/static/images/homepage.gif" alt="Home Page Gif" width="600">
 </div>
 
 ## "About" Page
